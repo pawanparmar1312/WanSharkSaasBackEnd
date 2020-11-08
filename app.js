@@ -88,7 +88,7 @@ app.use(compression());
 //   });// Ends here ========================================================================================
 
 
- app.get('/newadded',(req, res)=>{
+ app.get('/newlyadded',(req, res)=>{
     res.status(200).json({
         status:'success',
         data:{

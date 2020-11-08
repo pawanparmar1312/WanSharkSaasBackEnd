@@ -207,6 +207,16 @@ exports.getAllProductsByCategoryId = catchError(async(req , res , next) => {
     });
 });
 
+//GETTING PRODUCT INFO BY PRODUCT ID
+exports.getProductById = catchError(async (req , res , next) => {
+    const id = req.params.id;
+    const product = await Product.findById(id,{__v:0});
+    return res.status(200).json({
+        status: 'Success',
+        product
+    });
+});
+
 
 
 //==========================ENDS HERE===============================================================

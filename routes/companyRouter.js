@@ -19,4 +19,5 @@ router.post('/createProduct' , storeController.uploadProductIcon
                              , storeController.resizesImageProduct 
                              , storeController.createProduct);
 router.get('/getProductsByCategoryId/:id' , storeController.getAllProductsByCategoryId);
+router.get('/GetProductById/:id' , storeController.getProductById);
 module.exports = router;
